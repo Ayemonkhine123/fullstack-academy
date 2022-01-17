@@ -13,7 +13,12 @@ function App() {
       const userObject = await getUser(token);
       setUser(userObject);
     } else {
-      navigate("/login");
+      const localStoreToken = localStorage.getItem("TOKEN");
+      if (!localStorage) {
+        navigate("/login");
+      } else {
+        setToken(localStoreToken);
+      }
     }
   };
 

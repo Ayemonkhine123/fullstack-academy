@@ -1,11 +1,16 @@
 import { useState } from "react";
+import { postMessage } from "../api";
 
 const MessageForm = ({ postId, token, setDisplayMessageForm }) => {
   const [title, setTitle] = useState("");
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await postMessage(postId, title, token);
+      const response = await postMessage(
+        postId,
+        { message: { content: title } },
+        token
+      );
       if (response) {
         setDisplayMessageForm(false);
       }

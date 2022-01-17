@@ -24,7 +24,7 @@ const Profile = ({ userInfo }) => {
   };
 
   useEffect(() => {
-    const { toMe, fromMe } = getMessages(userInfo?.messages);
+    const { toMe, fromMe } = getMessages(userInfo?.messages, userInfo?._id);
     setMessagesFromMe(fromMe);
     setMessagesToMe(toMe);
   }, [userInfo]);
