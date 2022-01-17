@@ -1,0 +1,254 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Nav {
+  padding: 16px 20px;
+  background-color: lightskyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  padding: 0px 18px;
+}
+
+.Page {
+  padding: 0px 30px;
+}
+/* Start of Form */
+.form-wrapper {
+
+} 
+
+.form-field {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 16px
+}
+
+.form-link {
+  margin-top: 14px;
+  font-size: 12px;
+  color: blue;
+}
+
+.form-input {
+  font-size: 14px;
+    padding: 10px;
+    min-width: 250px;
+    border-radius: 6px;
+    border: 1px solid slategrey;
+}
+
+.form-submit-btn {
+  padding: 8px 12px;
+  background-color: lightsteelblue;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border: 0px;
+  border-radius: 8px;
+  min-width: 150px;
+  text-align: center;
+}
+/* End of Form */
+
+/* Start of Posts */
+.posts {
+  padding: 20px;
+}
+
+.posts-header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.post-create-btn {
+  font-size: 18px;
+  color: white;
+  background-color:lightsteelblue;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.posts-header-search {
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 350px;
+}
+
+.post-header-search-label {
+  font-size: 14px;
+  color: white;
+  font-style: italic;
+  padding: 6px;
+  background-color: lightsteelblue;
+}
+
+.posts-header-search-input {
+  border: 0px;
+  border-radius: 6px;
+  padding-left: 6px;
+  outline: none;
+}
+
+.posts-header-search-input:focus {
+  outline: none;
+  border: 0px;
+}
+
+.post-header-search-btn {
+  border: 0px;
+  background-color: lightblue;
+  border-radius: 0px 6px 6px 0px;
+}
+
+.post-container {
+  padding-top: 18px;
+}
+
+.post-wrapper {
+  text-align: left;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid grey;
+  padding: 20px;
+  margin-bottom: 12px;
+}
+
+.post-header {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.post-description {
+  font-size: 12px;
+}
+
+.post-content-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.post-content {
+  margin: 4px 0px;
+}
+
+.post-content-txt {
+  font-size: 14px;
+}
+
+.post-content-txt-bold {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.post-edit-actions {
+  display: flex;
+  align-items: center;
+}
+
+.post-action-btn {
+  margin: 16px 20px 0px 0px;
+  color: blue;
+  cursor: pointer;
+  border: 1px solid blue;
+  padding: 10px;
+  border-radius: 6px;
+  max-width: 130px;
+  width: auto;
+  text-align: center;
+  font-size: 14px;
+}
+
+.post-action-btn-delete {
+  color: red;
+  border: 1px solid red;
+}
+
+/* End of Posts */
+
+/* Start Profile */
+.profile-message-wrapper {
+  border-bottom: 2px solid grey;
+  padding: 10px;
+  background-color: white;
+  text-align: left;
+}
+
+.profile-message-header {
+  font-size: 18px;
+  color: grey;
+}
+
+.profile-message-content {
+  font-size: 14px;
+  color: black;
+}
+
+.profile-message-link {
+  color: blue;
+  font-size: 14px;
+}
+
+.profile-message-link-bold {
+  font-weight: 700;
+}
+/* end of profile */
+
+/* Start of Post */
+.view-post-wrapper {
+  margin-top: 24px;
+}
+/* End of Post */
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
