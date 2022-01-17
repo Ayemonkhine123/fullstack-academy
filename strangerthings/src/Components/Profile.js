@@ -32,6 +32,7 @@ const Profile = ({ userInfo }) => {
   return (
     <div>
       <div>
+        <h4>{userInfo?.username}</h4>
         <h3> Message To Me:</h3>
         {messagesToMe.map((msg, index) => (
           <Message
